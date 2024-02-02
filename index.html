@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous:wght@400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap">
+  <style>
+    body {
+      background: linear-gradient(180deg, #95d3ec, #c8575a);
+    }
+
+    .vc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .vf {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .vi {
+      margin: 10px;
+      padding: 8px;
+      width: 200px;
+      font-size: 16px;
+    }
+
+    .vb {
+      background-color: #ff4342;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="vc">
+    <div class="vf">
+      <h2 class="oS">SIGN IN</h2>
+      <form id="myForm">
+        <input type="text" class="vi" id="uname" placeholder="Username">
+        <br>
+        <input type="password" class="vi" id="pword" placeholder="Password">
+        <br>
+        <button type="button" class="vb" onclick="vForm()">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    function vForm() {
+      var uname = document.getElementById("uname").value;
+      var pword = document.getElementById("pword").value;
+
+      if (uname === "" || pword === "") {
+        alert("Please fill in all fields");
+      } else {
+        alert("Form submitted successfully");
+      }
+    }
+  </script>
+</body>
+</html>
